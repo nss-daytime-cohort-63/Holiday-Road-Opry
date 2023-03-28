@@ -1,13 +1,13 @@
-import {access} from'../Settings.js'
+import Settings from'../Settings.js'
 const baseURL = "https://developer.nps.gov/api/v1/"
-const nps = access.npsKey
+const nps = Settings.npsKey
 
 const parkState ={
     
 }
 
 export const fetchParks = () => {
-    return fetch(`${baseURL}/parks/?api_key=${nps}`)
+    return fetch(`${baseURL}parks?api_key=${nps}`)
     .then(response =>response.json())
     .then((park)=> {
         parkState.parks=park
@@ -15,5 +15,5 @@ export const fetchParks = () => {
 }
 
 export const getParks =()=>{
-    return parkState.parks.map(parks =>({...parks}))
+    return parkState.parks.data.map(park =>({...park}))
 }

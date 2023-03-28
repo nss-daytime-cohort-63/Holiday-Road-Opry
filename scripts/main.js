@@ -14,4 +14,4 @@ const render = () => {
 }
 
 render()
-fetchParks()
+//fetchParks()

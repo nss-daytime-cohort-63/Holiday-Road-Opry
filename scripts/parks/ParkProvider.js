@@ -2,7 +2,7 @@ import { getParks } from "./ParkDataAccess.js";
 
 
 export const parkDropDown =() => {
-    const parks=getParks()
+    const parks = getParks()
 
     let html= ''
 
@@ -11,7 +11,7 @@ export const parkDropDown =() => {
 
     for (const park of parks) {
         html +=
-        `<option value ="${park.data.id}">${park.data.fullName}</option>`
+        `<option value ="${park.id}">${park.fullName}</option>`
             }
 
             html += "</select>"
