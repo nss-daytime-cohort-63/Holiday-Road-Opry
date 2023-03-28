@@ -8,11 +8,14 @@
 8.  Fetcher and getter for attractions (bizarreries)
 9.  Create attractionDropDown fx, import into HolidayRoad
 <!-- Shows attractions (bizarreries) in a drop-down -->
-
-To-Do's
 10. Create eateriesDropDown fx, import into HolidayRoad
 11. Create fetcher and getter for parks, create parksDropdown fx, import into HolidayRoad
+<!-- shows eateries and parks in a drop-down -->
 
+
+To-Do's
+12. HolidayRoad.js
+        html formatting
 
 #.  Fetcher and getter for db.json
 
