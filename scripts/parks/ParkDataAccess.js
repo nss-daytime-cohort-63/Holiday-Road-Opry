@@ -7,7 +7,7 @@ const parkState ={
 }
 
 export const fetchParks = () => {
-    return fetch(`${baseURL}parks?api_key=${nps}`)
+    return fetch(`${baseURL}parks?api_key=${nps}&limit=500`)
     .then(response =>response.json())
     .then((park)=> {
         parkState.parks=park
