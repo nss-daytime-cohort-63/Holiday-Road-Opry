@@ -10,11 +10,9 @@
 <!-- Shows attractions (bizarreries) in a drop-down -->
 
 To-Do's
-10. Fetcher and getter for eateries
-11. Create eateriesDropDown fx, import into HolidayRoad
-12. Change Settings.js to 
-        export let access = {
-            }
+10. Create eateriesDropDown fx, import into HolidayRoad
+11. Create fetcher and getter for parks, create parksDropdown fx, import into HolidayRoad
+
 
 #.  Fetcher and getter for db.json
 
