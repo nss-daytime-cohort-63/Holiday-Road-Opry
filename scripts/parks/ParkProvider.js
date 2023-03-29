@@ -23,10 +23,19 @@ export const parkDropDown =() => {
 export const selectedNP =(selected)=>{
 const parks = getParks()
 
-let html=""
+let html="<p>"
  const parkSelected = parks.find(park => park.parkCode === selected)
- html+= `${parkSelected.description}`   
+ const physicalPark = parkSelected.addresses.find(addresses => addresses.type === "Physical")
+ html+= `Come visit ${parkSelected.fullName} in ${physicalPark.city}, ${physicalPark.stateCode}</p>`
+ html+= `<p> ${parkSelected.description}</p>`
+    
+     //html += `<p>${parkSelected.addresses[0].city}, ${parkSelected.addresses[0].stateCode}</p>`
+    
+    
+    
+    html+="</p>"  
  return html
+
 }
 
 document.addEventListener("change", selectedPark =>{
