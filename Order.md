@@ -14,12 +14,19 @@
 12. HolidayRoad.js
         html formatting
 <!-- shows details, preview, and saved itinerary areas -->
+13. AttractionProvider.js - fx to render details using .find()
+<!-- shows details for the selected attraction -->
+14. EateriesProvider.js - fx to render details using .find()
+<!-- shows details for the selected eatery -->
+
 
 
 
 To-Do's
 
 #.  Fetcher and getter for db.json
+css - extend the size of the details box(es)
+    default size and then extend when it needs to
 
 
 Notes
