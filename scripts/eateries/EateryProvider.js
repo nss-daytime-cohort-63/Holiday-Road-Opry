@@ -26,7 +26,7 @@ const eateries = getEateries()
 let html ='<p>'
 
 const foundEatery = eateries.find(eatery=> eatery.id === parseInt(selected))   
-    html +=  `Come visit ${foundEatery.name} in ${foundEatery.city}, ${foundEatery.state}</p>
+    html +=  `Come visit ${foundEatery.businessName} in ${foundEatery.city}, ${foundEatery.state}</p>
       <p>${foundEatery.description}</p> `
      if(foundEatery.ameneties.wheelchairAccessible ===true ){
  html += '<p> Wheelchair Accessible:&#10003</p>'
@@ -44,12 +44,23 @@ const foundEatery = eateries.find(eatery=> eatery.id === parseInt(selected))
     return html
 }
 
+const eateryPreview = (selected) => {
+    const eateries = getEateries()
+    let html = ``
+    
+    const foundEatery = eateries.find(eatery=> eatery.id === parseInt(selected))   
+    html += `<h2 class="foundEatery">${foundEatery.businessName}</h2>`
+    return html
+}
+
 mainContainer.addEventListener("change",
 changeEvent =>{
     if(changeEvent.target.id === 'eatery'){
-        const selectedAt = changeEvent.target.value
+        const selectedEat = changeEvent.target.value
         const renderHTML = document.querySelector("#eateries-detail")
-        renderHTML.innerHTML = selectedEatery(selectedAt)
+        const renderPreviewHTML = document.querySelector("#previewEatery")
+        renderHTML.innerHTML = selectedEatery(selectedEat)
+        renderPreviewHTML.innerHTML = eateryPreview(selectedEat)
     }
 }
 )

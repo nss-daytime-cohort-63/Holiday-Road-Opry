@@ -18,7 +18,7 @@
 <!-- shows details for the selected attraction -->
 14. EateriesProvider.js - fx to render details using .find()
 <!-- shows details for the selected eatery -->
-
+15. ParkProvider.js - fx to render details using .find()
 
 
 
