@@ -11,18 +11,6 @@
       "attractionName": "Giant Abraham Lincoln",
       "eateryName": "Hudson's Hamburgers",
       "id": 2
-    },
-    {
-      "parkName": "Anacostia Park",
-      "attractionName": "Ghostbusters Headquarters",
-      "eateryName": "Ocean Pride",
-      "id": 3
-    },
-    {
-      "parkName": "Edgar Allan Poe National Historic Site",
-      "attractionName": "Corn Palace",
-      "eateryName": "The Virginian",
-      "id": 4
     }
   ]
 }

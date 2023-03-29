@@ -6,7 +6,7 @@ export const parkDropDown =() => {
 
     let html= ''
 
-    html += '<select id ="park">'
+    html += '<select id ="park" class="dropdowns">'
     html += '<option value="0"> Select a Park</option>'
 
     for (const park of parks) {
