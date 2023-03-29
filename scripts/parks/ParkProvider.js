@@ -18,3 +18,23 @@ export const parkDropDown =() => {
             return html
 
 }
+
+
+export const selectedPark =(selected)=>{
+const parks = getParks()
+
+let html=""
+ const parkSelected = parks.data.find(e => element === selected)
+ html+= `${parkselected.description}`   
+ return html
+}
+
+document.addEventListener("change", selectedPark =()=>{
+    if(selectedPark.target.id.startsWith("park")){
+        const parkselected = selectedPark.target.value
+        const parkdetail = document.querySelector("#park-detail")
+
+
+        parkdetail.innerHTML = selectedPark(parkselected)
+    }
+})
