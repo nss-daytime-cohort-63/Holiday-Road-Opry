@@ -6,7 +6,7 @@ export const eateriesDropDown =() => {
 
     let html= ''
 
-    html += '<select id ="eatery">'
+    html += '<select id ="eatery" class="dropdowns">'
     html += '<option value="0"> Select an eatery</option>'
 
     for (const eatery of eateries) {

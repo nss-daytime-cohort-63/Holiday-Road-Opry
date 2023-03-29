@@ -5,7 +5,7 @@ export const attractionDropDown =() => {
 
     let html= ''
 
-    html += '<select id ="attraction">'
+    html += '<select id ="attraction" class="dropdowns">'
     html += '<option value="0"> Select an attraction</option>'
 
     for (const attraction of attractions) {
