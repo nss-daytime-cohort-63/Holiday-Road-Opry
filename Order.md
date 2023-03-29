@@ -19,7 +19,9 @@
 14. EateriesProvider.js - fx to render details using .find()
 <!-- shows details for the selected eatery -->
 15. ParkProvider.js - fx to render details using .find()
-
+<!-- shows details for the selected eatery -->
+16. Selected park, eatery, and attraction shows in the Preview Pane and CSS tweaks
+<!-- It works y'all -->
 
 
 To-Do's
