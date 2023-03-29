@@ -22,6 +22,29 @@ export const HolidayRoad = () => {
                 <article>
                     <h2>Preview</h2>
                     <section class="itinerary-preview">
+
+                    <div class="previewAttraction">
+                        <h2>Attraction:</h2>
+
+                        <div id="previewAttraction">
+                        </div>
+                    </div>
+
+                    <div class="previewPark">
+                        <h2>Park:</h2>
+                    
+                        <div id="previewPark">
+                       </div>
+                    </div>
+
+
+                    <div class="previewEatery">
+                        <h2>Eatery:</h2>
+                    
+                        <div id="previewEatery">
+                       </div>
+                    </div>
+
                     </section>
                     <button id="itinerary-button">Save Itinerary</button>
                 </article>

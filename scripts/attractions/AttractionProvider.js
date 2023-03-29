@@ -42,12 +42,22 @@ const foundAttraction = attractions.find(attraction=> attraction.id === parseInt
     return html
 }
 
+export const attractionPreview = (selected) => {
+    const attractions = getAttractions()
+    const foundAttraction = attractions.find(attraction=> attraction.id === parseInt(selected)) 
+    let html=`<h2 class="foundAttraction">${foundAttraction.name}</h2>`
+    return html
+}
+
 mainContainer.addEventListener("change",
 changeEvent =>{
     if(changeEvent.target.id === 'attraction'){
         const selectedAt = changeEvent.target.value
         const renderHTML = document.querySelector("#attraction-detail")
+        const renderPreviewHTML=document.querySelector("#previewAttraction")
         renderHTML.innerHTML = selectedAttraction(selectedAt)
+        renderPreviewHTML.innerHTML=attractionPreview(selectedAt)
+
     }
 }
 )
