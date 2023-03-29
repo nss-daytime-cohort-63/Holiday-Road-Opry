@@ -11,7 +11,7 @@ export const parkDropDown =() => {
 
     for (const park of parks) {
         html +=
-        `<option value ="${park.parkCode}">${park.fullName}</option>`
+        `<option value ="${park.parkCode}" name="${park.fullName}">${park.fullName}</option>`
             }
 
             html += "</select>"

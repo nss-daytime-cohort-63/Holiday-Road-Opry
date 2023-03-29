@@ -1,6 +1,7 @@
 import { attractionDropDown } from "./attractions/AttractionProvider.js"
 import { parkDropDown } from "./parks/ParkProvider.js"
 import { eateriesDropDown } from "./eateries/EateryProvider.js"
+import { savedItineraries } from "./Itineraries.js"
 
 export const HolidayRoad = () => {
     return `
@@ -53,6 +54,7 @@ export const HolidayRoad = () => {
         <aside>
             <h2>Saved Itineraries</h2>
             <section class="saved-itineraries">
+            ${savedItineraries()}
             </section>
         </aside>
     </div>
