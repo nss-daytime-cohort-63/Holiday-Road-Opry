@@ -38,12 +38,21 @@ let html="<p>"
 
 }
 
+export const parkPreview = (selected) => {
+    const parks = getParks()
+    const foundPark = parks.find(park => park.parkCode === selected)
+    let html=`<h2 class="foundPark">${foundPark.fullName}</h2>`
+    return html
+}
+
+
 document.addEventListener("change", selectedPark =>{
     if(selectedPark.target.id.startsWith("park")){
         let parkselected = selectedPark.target.value
         const parkdetail = document.querySelector("#park-detail")
-
+        const renderPreviewHTML = document.querySelector("#previewPark")
 
         parkdetail.innerHTML = selectedNP(parkselected)
+        renderPreviewHTML.innerHTML = parkPreview(parkselected)
     }
 })
