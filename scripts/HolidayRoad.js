@@ -10,7 +10,7 @@ export const HolidayRoad = () => {
                 <h2>Make an Itinerary</h2>
                 <div class="dropdown-container">
                     <section>${attractionDropDown()}
-                        <div class="details" id-"attraction-detail"></div>
+                        <div class="details" id="attraction-detail"></div>
                     </section>
                     <section>${parkDropDown()}
                         <div class="details" id="park-detail"></div>
